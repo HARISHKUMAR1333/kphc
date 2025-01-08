@@ -1,222 +1,142 @@
-const headerDesk = `<nav class="navbar-default-page-header">
-<div class="header-image-container">
-  <img src=${guviLogo} id="guvi-logo-desk"/>
-</div>
-<div class="signout-right-corner">
+const navBarElement = `<div class="nav-bar-wrapper">
+        <div class="logo">
+            <img src="./images/common/logo.svg" />
+            <p class="heading-text">KPHealthCare</p>
+        </div>
+        <ul class="nav-menu align-to-right">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li class=""><a href="technical_services">Our Services</a></li>
+            <li class=""><a href="our_clients">Our Clients</a></li>
+            <li class=""><a href="contact_us">Contacts</a></li>
+        </ul>
+    </div>`;
 
-    <button class="search-box-container">
-    <input type="text" placeholder="Try searching “show all 2023 passout”" id="searchStudentName"/>
-    </button>
+const footer = `<footer>
+        <section class="footer__area-common">
+            <div class="container">
+                <div class="row mb-minus-50">
+                    <!-- Footer Logo and Social Links -->
+                    <div class="col-lg-3 col-6">
+                        <div class="footer__widget footer__widget-item-1">
+                            <div class="footer__logo mb-30">
+                                <a href="index.html">
+                                    <img class="img-fluid" src="./images/common/logo.svg" alt="logo">
+                                </a>
+                            </div>
 
-    <button class="share-btn-container">
-    <img src=${shareIcon} id="share-btn-desk"/>
-    <div class="share-text">Share</div>
-    </button>
+                            <div class="footer__content">
+                                <p class="mb-0">It is a long established fact that a reader will be distracted</p>
+                            </div>
 
-    <button class="viewLeaderBoard-btn-container">
-    <img src=${leaderBoardIcon} id="leaderboard-icon"/>
-    <div class="leaderBoard-text">View Leaderboard</div>
-    </button>
+                            <div class="footer__social mt-30">
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-    <button class="sign-out-btn-container">
-    <img src=${signOut} id="sign-out-desk"/>
-    <div class="signout-text">Sign out</div>
-    </button>
-   </div>
-</nav>`;
+                    <!-- Footer Services Links -->
+                    <div class="col-lg-2 col-6">
+                        <div class="footer__widget footer__widget-item-2">
+                            <div class="footer__widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="footer__link">
+                                <ul>
+                                    <li><a href="about-us.html">Reliable Rentals</a></li>
+                                    <li><a href="about-us.html">Golden Key Properties</a></li>
+                                    <li><a href="about-us.html">Swift Home Sales</a></li>
+                                    <li><a href="about-us.html">Elite Realty Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-const commonMobileHeader = `
-<nav class="navbar-default-page-header-mob">
-<div class="menu-icon"><img src=${menuIcon} id="menu-icon"/></div>
-<div class="logo-center">
-  <img class="guvi-logo-img" src=${guviLogo} />
-</div>
-<div class="logout-btn-container">
-<button class="logout-btn">Logout</button>
-</div>
-</nav>`;
+                    <!-- Footer Newsletter Subscription -->
+                    <div class="col-lg-4 col-6">
+                        <div class="footer__widget footer__widget-item-3">
+                            <div class="footer__widget-title">
+                                <h4>Our newsletter</h4>
+                            </div>
 
-const navBarElement = `<div class="sidebar">
-  <img  src=${dashboardIcon} id="dashboard" style="cursor:Pointer"/>
-  <img src=${leaderboardIcon} id="leaderboard" style="cursor:Pointer"/>
-  <img src=${manageprofileIcon} id="manageprofile" style="cursor:Pointer"/>
-  <img src=${questionIcon} id="help" style="cursor:Pointer"/>
-  </div>`;
+                            <div class="footer__subscribe-content">
+                                <p class="mb-30">Custom Software Development Tailored Solutions for Your Business Custom
+                                </p>
 
-const navBarElementMob = `<div class="navbar-mobile-container">
-  <div class="list-parent-container"> 
-  <li class="nav-items">Home</li>
-  <li class="nav-items">Reports</li>
-  <li class="nav-items">Settings</li>
-  <li class="nav-items">Info</li>
-  </div>
-  </div>`;
+                                <!-- <div class="footer__subscribe d-flex mt-30">
+                                    <input type="text" placeholder="Enter e-mail">
+                                    <button type="submit" class="rr-btn rr-btn__theme">
+                                        <span class="btn-wrap">
+                                            <span class="text-one"><i class="fa-solid fa-paper-plane"></i></span>
+                                            <span class="text-two"><i class="fa-solid fa-paper-plane"></i></span>
+                                        </span>
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Footer Contact Info -->
+                    <div class="col-lg-3 col-6">
+                        <div class="footer__widget footer__widget-item-4">
+                            <div class="footer__widget-title">
+                                <h4>Our Office</h4>
+                            </div>
+
+                            <div class="footer__link footer__link-location">
+                                <ul>
+                                    <li><a href="mailto:debra.holt@example.com"><i class="fa-solid fa-envelope"></i>
+                                            test@example.com</a></li>
+                                    <li><a href="https://maps.app.goo.gl/4XYAPDmpesGnSbsC8"><i
+                                                class="fa-solid fa-location-dot"></i> 3891 Ranchview Dr. dev,
+                                            cbn 62639</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer__bottom-wrapper">
+                <div class="container">
+                    <div class="footer__bottom">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="footer__copyright text-lg-start text-center">
+                                    <p class="mb-0">© <a href="index.html">Medilix</a> 2024 | All Rights Reserved</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="footer__copyright-menu">
+                                    <ul>
+                                        <li><a href="about-us.html">Trams &amp; Condition</a></li>
+                                        <li><a href="about-us.html">Privacy Policy</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>`;
 function init() {
-  document.getElementById('common-header-desk').innerHTML = headerDesk;
-  document.getElementById('common-header-mob').innerHTML = commonMobileHeader;
-
-  document.getElementsByClassName('menu-icon')[0].onclick = function (e) {
-    const navBarMob = document.getElementById('commonNavbar-mobile');
-    if (navBarMob.style.display == 'none' || navBarMob.style.display == '') {
-      document.getElementsByClassName('menu-icon')[0].style.background =
-        'var(--primary-select-green)';
-      navBarMob.style.display = 'block';
-    } else {
-      document.getElementsByClassName('menu-icon')[0].style.background =
-        'var(--primary-dark-green)';
-      navBarMob.style.display = 'none';
-    }
-  };
-
-  document.getElementsByClassName('guvi-logo-img')[0].onclick = function (e) {
-    window.location.href = '/home.html';
-  };
-  document.getElementById('guvi-logo-desk').onclick = function (e) {
-    window.location.href = '/home.html';
-  };
-
   document.getElementById('commonNavbar').innerHTML = navBarElement;
-
-  document.getElementById('dashboard').onclick = function () {
-    window.location.href = '/home.html';
-  };
-
-  document.getElementById('leaderboard').onclick = function () {
-    window.location.href = '/leaderboard.html';
-  };
-
-  document.getElementById('manageprofile').onclick = function () {
-    window.location.href = '/manageprofile.html';
-  };
-
-  document.getElementById('help').onclick = function () {
-    window.location.href = '/help.html';
-  };
-
-  document.getElementById('commonNavbar-mobile').innerHTML = navBarElementMob;
-  const navItemList = document.getElementsByClassName('nav-items');
-
-  for (let i = 0; i < navItemList.length; i++) {
-    navItemList[i].addEventListener('click', onItemClick);
-  }
-  document
-    .getElementsByClassName('share-btn-container')[0]
-    ?.addEventListener('click', (e) => {
-      let emailDldBtn = document.getElementsByClassName(
-        'emailDown-parent-container'
-      )[0];
-      if (emailDldBtn.classList.contains('disable-email-hide')) {
-        emailDldBtn.classList.remove('disable-email-hide');
-      } else {
-        emailDldBtn.classList.add('disable-email-hide');
-      }
-    });
-  conditionalHeaderBtnRender();
 }
 
-function conditionalHeaderBtnRender() {
-  let viewLeaderboardBtn = document.getElementsByClassName(
-    'viewLeaderBoard-btn-container'
-  )[0];
+window.addEventListener('scroll', function () {
+  var navBarWrapper = document.querySelector('.nav-bar-wrapper');
 
-  if (window.location.href.includes('viewLeaderboard.html')) {
-    viewLeaderboardBtn?.classList.add('highlightViewLeaderborad-btn');
-  }
-  viewLeaderboardBtn?.addEventListener('click', navigateToViewLeaderBoard);
-
-  if (
-    window.location.href.includes('home.html') ||
-    window.location.href.includes('viewLeaderboard.html') ||
-    window.location.href.match(/^https?:\/\/[^/]+\/?$/)
-  ) {
-    document.getElementsByClassName('search-box-container')[0].style.display =
-      'none';
-    document.getElementsByClassName('share-btn-container')[0].style.display =
-      'none';
-  }
-
-  if (
-    window.location.href.includes('leaderboard.html') ||
-    window.location.href.includes('manageprofile.html') ||
-    window.location.href.includes('help.html')
-  ) {
-    document.getElementsByClassName('search-box-container')[0].style.display =
-      'none';
-    document.getElementsByClassName('share-btn-container')[0].style.display =
-      'none';
-
-    document.getElementsByClassName(
-      'viewLeaderBoard-btn-container'
-    )[0].style.display = 'none';
-  }
-}
-
-function onItemClick(event) {
-  const selectedItem = event.target.innerText;
-  navigateTo(selectedItem);
-}
-
-function navigateTo(selectedItem) {
-  switch (selectedItem) {
-    case 'Home':
-      window.location.href = '/home.html';
-      break;
-    case 'Reports':
-      window.location.href = '/leaderboard.html';
-      break;
-    case 'Settings':
-      window.location.href = '/manageprofile.html';
-      break;
-    case 'Info':
-      window.location.href = '/help.html';
-      break;
-    default:
-      window.location.href = '/home.html';
-      break;
-  }
-}
-
-function hightlightSelectedTab() {
-  const windowUrl = window.location.pathname;
-
-  switch (windowUrl) {
-    case '/home.html':
-      document.getElementById('dashboard').style.background =
-        'var(--primary-color)';
-      break;
-    case '/leaderboard.html':
-      document.getElementById('leaderboard').style.background =
-        'var(--primary-color)';
-      break;
-    case '/manageprofile.html':
-      document.getElementById('manageprofile').style.background =
-        'var(--primary-color)';
-      break;
-    case '/help.html':
-      document.getElementById('help').style.background = 'var(--primary-color)';
-      break;
-    case '/viewLeaderboard.html':
-      document.getElementById('leaderboard').style.background =
-        'var(--primary-color)';
-      break;
-    case '/course.html':
-      document.getElementById('leaderboard').style.background =
-        'var(--primary-color)';
-      break;
-    default:
-      document.getElementById('dashboard').style.background =
-        'var(--primary-color)';
-  }
-}
-
-function navigateToViewLeaderBoard() {
-  if (window.location.href.includes('viewLeaderboard.html')) {
-    return;
+  if (window.scrollY >= 90) {
+    navBarWrapper.classList.add('scroll-Navbar');
   } else {
-    window.location.href = '/viewLeaderboard.html';
+    navBarWrapper.classList.remove('scroll-Navbar');
   }
-}
+});
 
 init();
-hightlightSelectedTab();
