@@ -115,3 +115,45 @@
 .banner__media img {
   width: 100%;
 }
+
+.primary-list li i {
+    color: #1a2b55;
+    padding-right: 10px;
+}
+
+.primary-list li {
+    list-style-type: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    display: flex;
+}
+
+.section-heading-line-left {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #1a2b55;
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.section-block {
+    padding: 50px 0px 50px 0px;
+}
+
+.service-card-text {
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: var(--rr-fs-h4);
+    line-height: var(--rr-lh-h4);
+    font-weight: var(--rr-fw-medium);
+    text-decoration: none;
+
+}
+

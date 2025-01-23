@@ -1,0 +1,23 @@
+.servies-body {
+    padding-top: 153px;
+}
+
+
+.breadcrumb__menu ul a, button {
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+}
+
+.breadcrumb__menu ul li:after {
+    content: ' \f105';
+    color: #fff;
+    font-family: 'FontAwesome' !important;
+    padding: 0px 10px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}

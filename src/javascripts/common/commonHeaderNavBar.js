@@ -127,6 +127,7 @@ const footer = `<footer>
     </footer>`;
 function init() {
   document.getElementById('commonNavbar').innerHTML = navBarElement;
+  document.getElementById('commonfooter').innerHTML = footer;
 }
 
 window.addEventListener('scroll', function () {

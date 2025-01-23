@@ -5,11 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="./stylesheets/common/style.css" />
+    <link rel="stylesheet" href="./stylesheets/common/main.css" />
     <link rel="stylesheet" href="./stylesheets/home/style.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../src/stylesheets/common/bootstrap.min.css">
+    <!-- Swiper CSS (for styles) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -18,36 +22,116 @@
         <section class="banner banner__space overflow-hidden">
             <div class="container">
                 <div class="banner__shape">
-                    <img src="./images/common/banner-shape.png" alt="image not found">
+                    <img src="./images/common/banner-shape.png" alt="image not found" />
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="banner__content text-center">
-                            <h1 class="mb-25 mb-xs-20 title-animation" style="perspective: 100px;">
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 100.977px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Our</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 91.3516px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Statistics</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 246.555px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Speak</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 37.4688px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    About</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 69.7812px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Our</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 91.8047px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Expertise</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 89.6328px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    &</div>
-                                <div
-                                    style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform-origin: 51.5859px 50px; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                    Quality</div>
+                            <h1 class="mb-25 mb-xs-20 title-animation" style="perspective: 100px">
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 100.977px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Our
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 91.3516px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Statistics
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 246.555px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Speak
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 37.4688px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    About
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 69.7812px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Our
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 91.8047px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Expertise
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 89.6328px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    &
+                                </div>
+                                <div style="
+                      position: relative;
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 51.5859px 50px;
+                      transform: translate(0px, 0px);
+                      opacity: 1;
+                      visibility: inherit;
+                    ">
+                                    Quality
+                                </div>
                             </h1>
                             <!-- <a href="about-us.html" class="rr-btn">
                                 <div class="panel wow" style="visibility: visible; animation-name: panel;"></div>
@@ -57,11 +141,16 @@
                                 </span>
                             </a> -->
                             <div class="banner__media mt-45 mt-xs-35 position-relative">
-                                <div class="panel wow" style="visibility: visible; animation-name: panel;"></div>
-                                <img class="img-fluid"
-                                    data-parallax="{&quot;scale&quot;: 1.2, &quot;smoothness&quot;: 15}"
-                                    src="./images/common/Digital Radiography.jpeg" alt="images not found"
-                                    style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1.014) scaleY(1.014) scaleZ(1.014); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1.014) scaleY(1.014) scaleZ(1.014); ">
+                                <div class="panel wow" style="visibility: visible; animation-name: panel"></div>
+                                <img class="img-fluid" data-parallax='{"scale": 1.2, "smoothness": 15}'
+                                    src="./images/common/Digital Radiography.jpeg" alt="images not found" style="
+                      transform: translate3d(0px, 0px, 0px) rotateX(0deg)
+                        rotateY(0deg) rotateZ(0deg) scaleX(1.014) scaleY(1.014)
+                        scaleZ(1.014);
+                      -webkit-transform: translate3d(0px, 0px, 0px)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1.014)
+                        scaleY(1.014) scaleZ(1.014);
+                    " />
                             </div>
                         </div>
                     </div>
@@ -73,44 +162,298 @@
             <div class="section-heading center-holder">
                 <h2>Mission &amp; Vision</h2>
                 <div class="section-heading-line"></div>
-
             </div>
             <div class="row mt-50 justify-content-center">
                 <div class="col-md-5 col-sm-5 col-12">
                     <div class="number-box">
                         <!-- <h3>01</h3> -->
-                        <img src="./images/common/mission.png">
+                        <img src="./images/common/mission.png" />
                         <div class="number-box-line"></div>
                         <h4>Mission</h4>
-                        <p>To achieve exceptional services by
-                            implementing technology
-                            advancements with skilled global
-                            experiences team, which follows
-                            transparent process to deliver the
-                            services</p>
+                        <p>
+                            To achieve exceptional services by implementing technology
+                            advancements with skilled global experiences team, which follows
+                            transparent process to deliver the services
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-5 col-12">
                     <div class="number-box">
-                        <img src="./images/common/vision.png">
+                        <img src="./images/common/vision.png" />
 
                         <div class="number-box-line"></div>
                         <h4>Vision</h4>
-                        <p>To revolutionize healthcare technology
-                            services by delivering affordable and
-                            efficient biomedical equipment
-                            management services that optimize
-                            patient care and safety</p>
+                        <p>
+                            To revolutionize healthcare technology services by delivering
+                            affordable and efficient biomedical equipment management
+                            services that optimize patient care and safety
+                        </p>
                     </div>
                 </div>
-
             </div>
         </div>
+
+        <!-- aboutus -->
+        <div class="section-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-12">
+                        <div class="pr-30-md">
+                            <div class="section-heading">
+                                <h4>About Us</h4>
+                            </div>
+                            <div class="section-heading-line-left"></div>
+                            <div class="mt-20">
+                                <ul class="primary-list wow fadeInLeft" data-wow-delay="200ms"
+                                    data-wow-duration="1000ms" style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 200ms;
+                      animation-name: fadeInLeft;
+                    ">
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>KP Healthcare Services
+                                        Pvt. Ltd. is established in the year 1996.
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>KP Healthcare Services
+                                        strives passionately aiming to deliver Healthcare
+                                        Technology Management Services, Bio-medical Equipment
+                                        Maintenance and Management Services and providing top
+                                        notch service support to the healthcare facilities with
+                                        minimal interruptions
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>With earned and faith
+                                        from our valuable clients, we are engaged presently in
+                                        providing services in both Private and Public healthcare
+                                        facilities to over 1,00,000 Medical Devices in over 3000
+                                        Healthcare Facilities
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="mt-25"> <a href="#" class="primary-button button-sm mb-15-xs">Contact Us</a> </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-12 wow fadeInRight" data-wow-delay="200ms"
+                        data-wow-duration="1000ms" style="
+                visibility: visible;
+                animation-duration: 1000ms;
+                animation-delay: 200ms;
+                animation-name: fadeInRight;
+              ">
+                        <img src="../src/images/common/home1.jpg" class="rounded-border shadow-primary w-100"
+                            alt="img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+
+        <div class="container">
+            <div class="row mb-minus-30">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                    <div class="treatment-process__item mb-30 text-center">
+                        <div class="treatment-process__item-icon mb-20 mb-xs-15">
+                            <img src="../src/images/common/service__item-3.png" alt="icon not found">
+                        </div>
+                        <h4 class="mb-15 mb-xs-10"><a href="service-details.html" class="service-card-text">Catalyst
+                                Services</a></h4>
+                        <p class="mb-0">Et purus duis sollicitudin sed dign issim habi tant.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                    <div class="treatment-process__item mb-30 text-center">
+                        <div class="treatment-process__item-icon mb-20 mb-xs-15">
+                            <img src="../src/images/common/service__item-4.png" alt="icon not found">
+                        </div>
+                        <h4 class="mb-15 mb-xs-10"><a href="service-details.html" class="service-card-text">Wave
+                                Solutions</a></h4>
+                        <p class="mb-0">Et purus duis sollicitudin sed dign issim habi tant.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                    <div class="treatment-process__item mb-30 text-center">
+                        <div class="treatment-process__item-icon mb-20 mb-xs-15">
+                            <img src="../src/images/common/treatment-process__item-2.png" alt="icon not found">
+                        </div>
+                        <h4 class="mb-15 mb-xs-10"><a href="service-details.html" class="service-card-text">Health
+                                Hub</a></h4>
+                        <p class="mb-0">Et purus duis sollicitudin sed dign issim habi tant.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                    <div class="treatment-process__item mb-30 text-center">
+                        <div class="treatment-process__item-icon mb-20 mb-xs-15">
+                            <img src="../src/images/common/treatment-process__item-4.png" alt="icon not found">
+                        </div>
+                        <h4 class="mb-15 mb-xs-10"><a href="service-details.html" class="service-card-text">Weave
+                                Solutions</a></h4>
+                        <p class="mb-0">Et purus duis sollicitudin sed dign issim habi tant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- customer -->
+        <div class="brand__area section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper brand__active swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper" id="swiper-wrapper-ac101efdfb2ab3b79" aria-live="off"
+                                style="transform: translate3d(-2312px, 0px, 0px); transition-duration: 300ms;">
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                    role="group" aria-label="2 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                    data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                    data-swiper-slide-index="4" role="group" aria-label="5 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" role="group"
+                                    aria-label="5 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                    role="group" aria-label="2 / 5" style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                    data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+                                    style="width: 133px; margin-right: 156px;">
+                                    <div class="brand__item text-center">
+                                        <div class="brand__thumb">
+                                            <img class="img-fluid" src="./images/common/brand-3.png"
+                                                alt="image not found">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div id="commonfooter"></div> -->
     </div>
 
     <script src="../src/javascripts/common/commonHeaderNavBar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.brand__active', {
+            loop: true, // Enable infinite loop
+            autoplay: {
+                delay: 3000, // Adjust the delay for the loop speed (in ms)
+                disableOnInteraction: false, // Ensure the autoplay continues after user interaction
+            },
+            slidesPerView: 'auto', // Adjust the number of slides to show at once if needed
+            spaceBetween: 20, // Adjust the space between slides
+            // Additional settings like navigation, pagination, etc., can be added here
+        });
+    </script>
 </body>
 
 </html>
