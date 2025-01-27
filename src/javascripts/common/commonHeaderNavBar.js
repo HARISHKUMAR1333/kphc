@@ -5,7 +5,7 @@ const navBarElement = `<div class="nav-bar-wrapper">
         </div>
         <ul class="nav-menu align-to-right">
             <li class="active"><a href="home.html">Home</a></li>
-            <li class=""><a href="technical_services">Our Services</a></li>
+            <li class=""><a href="services.html">Our Services</a></li>
             <li class=""><a href="our_clients">Our Clients</a></li>
             <li class=""><a href="contact_us">Contacts</a></li>
         </ul>
