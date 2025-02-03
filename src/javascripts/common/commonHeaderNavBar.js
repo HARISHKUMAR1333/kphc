@@ -11,7 +11,7 @@ const navBarElement = `<div class="nav-bar-wrapper">
         </ul>
     </div>`;
 
-const footer = `<footer>
+const footer = `<footer class ='footermain-wrapper'>
         <section class="footer__area-common" >
             <div class="container">
                 <div class="row mb-minus-50">
@@ -106,7 +106,7 @@ const footer = `<footer>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="footer__copyright text-lg-start text-center">
-                                    <p class="mb-0">© <a href="index.html">Medilix</a> 2024 | All Rights Reserved</p>
+                                    <p class="mb-0">© <a href="index.html">KpHealthCare</a> 2024 | All Rights Reserved</p>
                                 </div>
                             </div>
 
