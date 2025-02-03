@@ -12,7 +12,7 @@ const navBarElement = `<div class="nav-bar-wrapper">
     </div>`;
 
 const footer = `<footer>
-        <section class="footer__area-common">
+        <section class="footer__area-common" >
             <div class="container">
                 <div class="row mb-minus-50">
                     <!-- Footer Logo and Social Links -->

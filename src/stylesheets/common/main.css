@@ -315,9 +315,9 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: var(--rr-fs-h1);
-  line-height: var(--rr-lh-h1);
-  font-weight: var(--rr-fw-ebold);
+  font-size: var(--rr-fs-h1) !important;
+  line-height: var(--rr-lh-h1) !important;
+  font-weight: var(--rr-fw-ebold) !important;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   h1, .h1 {
@@ -345,9 +345,9 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: var(--rr-fs-h2);
-  line-height: var(--rr-lh-h2);
-  font-weight: var(--rr-fw-regular);
+  font-size: var(--rr-fs-h2) !important;
+  line-height: var(--rr-lh-h2) !important;
+  font-weight: var(--rr-fw-regular) !important;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   h2, .h2 {
@@ -468,7 +468,7 @@ textarea {
   font-style: normal;
   font-weight: 400;
   height: 58px;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 28px;
   color: var(--rr-color-900) !important;
   border-radius: 999px;
@@ -8412,6 +8412,9 @@ body .ui-tooltip {
   position: relative;
   z-index: 1;
   padding-top: 160px;
+  background-image: url('./images/common/background.png');
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer__area-common {
