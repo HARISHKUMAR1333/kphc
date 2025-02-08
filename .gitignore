@@ -1,0 +1,22 @@
+# General
+.DS_Store
+.Trashes
+
+# Node/NPM
+/node_modules
+.npm
+/.parcel-cache
+
+# Project
+/dist
+/temporary
+/temp
+/logs
+*.log
+/bundle
+/tmp
+.env
+
+# Tests/Coverage
+/coverage
+test-report.html

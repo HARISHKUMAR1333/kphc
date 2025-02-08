@@ -1,0 +1,7 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "src/*.svg": ["@company/parcel-transformer-svg-icons", "..."],
+    "*.svg": ["@parcel/transformer-svg"]
+  }
+}
