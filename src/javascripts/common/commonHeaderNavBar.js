@@ -1,13 +1,22 @@
+import logo from '../../images/common/logo.svg';
 const navBarElement = `<div class="nav-bar-wrapper">
         <div class="logo">
-            <img src="./images/common/logo.svg" />
+            <img src=${logo} />
             <p class="heading-text">KPHealthCare</p>
         </div>
         <ul class="nav-menu align-to-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class=""><a href="services.html">Our Services</a></li>
-            <li class=""><a href="client.html">Our Clients</a></li>
-            <li class=""><a href="contact.html">Contacts</a></li>
+            <li class=${
+              window.location.pathname === '/index.html' ? 'active' : ''
+            }><a href="index.html">Home</a></li>
+            <li class=${
+              window.location.pathname === '/services.html' ? 'active' : ''
+            }><a href="services.html">Our Services</a></li>
+            <li class=${
+              window.location.pathname === '/client.html' ? 'active' : ''
+            }><a href="client.html">Our Clients</a></li>
+            <li class=${
+              window.location.pathname === '/contact.html' ? 'active' : ''
+            }><a href="contact.html">Contacts</a></li>
         </ul>
     </div>`;
 
@@ -20,7 +29,7 @@ const footer = `<footer class ='footermain-wrapper'>
                         <div class="footer__widget footer__widget-item-1">
                             <div class="footer__logo mb-30">
                                 <a href="index.html">
-                                    <img class="img-fluid" src="./images/common/logo.svg" alt="logo">
+                                    <img class="img-fluid" src=${logo}  alt="logo">
                                 </a>
                             </div>
 
