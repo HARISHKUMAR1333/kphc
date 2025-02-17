@@ -1,3 +1,8 @@
+import xray1 from '../../images/singleDetails/siemens-multiphos-15-x-ray-machine.jpeg';
+import xray3 from '../../images/singleDetails/Siemens-Heliphor-DX-ray.jpeg';
+import xray4 from '../../images/singleDetails/GE-Genius-100.jpeg';
+import xray5 from '../../images/singleDetails/GE-Genius-300.jpeg';
+
 const machineDetails = {
   xray: {
     heading: 'X Ray Machine',
@@ -9,6 +14,7 @@ const machineDetails = {
         models: [
           {
             model: 'Siemens Multiphos 15 X-ray',
+            image: xray1,
             specification: {
               Brand: 'Siemens',
               'Model Name/Number': 'Multiphos 15',
@@ -38,6 +44,7 @@ const machineDetails = {
           },
           {
             model: 'Siemens Heliphor-D X-ray',
+            image: xray3,
             specification: {
               Brand: 'Siemens',
               'Model Name/Number': 'Heliphor-D',
@@ -49,19 +56,19 @@ const machineDetails = {
               'kV Range': '40kV to 120kV',
             },
           },
-          {
-            model: 'Siemens Phrliphos-D X-ray',
-            specification: {
-              Brand: 'Siemens',
-              'Model Name/Number': 'Phrliphos-D',
-              'Machine Type': 'Fixed',
-              Application: 'Diagnostic Imaging',
-              'X-ray Tube': 'High Frequency',
-              'Country of Origin': 'Made in Germany',
-              'Output Power': '18kW',
-              'kV Range': '40kV to 110kV',
-            },
-          },
+          // {
+          //   model: 'Siemens Phrliphos-D X-ray',
+          //   specification: {
+          //     Brand: 'Siemens',
+          //     'Model Name/Number': 'Phrliphos-D',
+          //     'Machine Type': 'Fixed',
+          //     Application: 'Diagnostic Imaging',
+          //     'X-ray Tube': 'High Frequency',
+          //     'Country of Origin': 'Made in Germany',
+          //     'Output Power': '18kW',
+          //     'kV Range': '40kV to 110kV',
+          //   },
+          // },
         ],
       },
       {
@@ -71,6 +78,7 @@ const machineDetails = {
         models: [
           {
             model: 'GE Genius 100 X-ray',
+            image: xray4,
             specification: {
               Brand: 'GE',
               'Model Name/Number': 'Genius 100',
@@ -84,6 +92,7 @@ const machineDetails = {
           },
           {
             model: 'GE Genius 300 X-ray',
+            image: xray5,
             specification: {
               Brand: 'GE',
               'Model Name/Number': 'Genius 300',
@@ -520,7 +529,12 @@ machineDetails[type].brands.forEach((brand, brandIndex) => {
         <div class="row mt-3 d-flex" style="gap: 30px; background: var(--rr-common-white); border: 1px solid #E4E5E5; border-radius: 20px; padding: 20px; justify-content: center; margin: 20px;">
           <div class="col-12 col-md-6">
             <div class="card">
-              <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/325079259/EV/VA/RY/57551116/siemens-multimobil-2-5-mobile-x-ray-machine-500x500.jpg" class="card-img-top img-fluid" alt="${brand.name} ${model.model}">
+              <img src=${
+                model?.image ||
+                'https://5.imimg.com/data5/SELLER/Default/2023/7/325079259/EV/VA/RY/57551116/siemens-multimobil-2-5-mobile-x-ray-machine-500x500.jpg'
+              } class="card-img-top img-fluid" alt="${brand.name} ${
+      model.model
+    }">
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -534,12 +548,24 @@ machineDetails[type].brands.forEach((brand, brandIndex) => {
                     <tr><td>Machine Type</td><td>Portable (Mobile)</td></tr>
                     <tr><td>Operation Mode</td><td>Automatic</td></tr>
                     <tr><td>X-Ray Tube</td><td>1.5mm X 1.5mm</td></tr>
-                    <tr><td>Output wave</td><td>${model.specification['Output wave']}</td></tr>
-                    <tr><td>Tube Head Angulations</td><td>${model.specification['Tube Head Angulations']}</td></tr>
-                    <tr><td>mA Range</td><td>${model.specification['mA Range']}</td></tr>
-                    <tr><td>Exposure Technique</td><td>${model.specification['Exposure Technique']}</td></tr>
-                    <tr><td>Output Power</td><td>${model.specification['Output Power']}</td></tr>
-                    <tr><td>kV range</td><td>${model.specification['kV range']}</td></tr>
+                    <tr><td>Output wave</td><td>${
+                      model.specification['Output wave']
+                    }</td></tr>
+                    <tr><td>Tube Head Angulations</td><td>${
+                      model.specification['Tube Head Angulations']
+                    }</td></tr>
+                    <tr><td>mA Range</td><td>${
+                      model.specification['mA Range']
+                    }</td></tr>
+                    <tr><td>Exposure Technique</td><td>${
+                      model.specification['Exposure Technique']
+                    }</td></tr>
+                    <tr><td>Output Power</td><td>${
+                      model.specification['Output Power']
+                    }</td></tr>
+                    <tr><td>kV range</td><td>${
+                      model.specification['kV range']
+                    }</td></tr>
                   </tbody>
                 </table>
               </div>
