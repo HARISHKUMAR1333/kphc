@@ -71,7 +71,8 @@ const footer = `<footer class ='footermain-wrapper'>
                             </div>
 
                             <div class="footer__subscribe-content">
-                                <p class="mb-30">Custom Software Development Tailored Solutions for Your Business Custom
+                                <p class="mb-30">Innovative Medical Equipment Solutions for Your Healthcare Business
+Custom Service, Support, and Sales Tailored to Your Needs
                                 </p>
 
                                 <!-- <div class="footer__subscribe d-flex mt-30">
@@ -97,7 +98,7 @@ const footer = `<footer class ='footermain-wrapper'>
                             <div class="footer__link footer__link-location">
                                 <ul>
                                     <li><a href="mailto:debra.holt@example.com"><i class="fa-solid fa-envelope"></i>
-                                            test@example.com</a></li>
+                                            kphealthcareltd2020@gmail.com</a></li>
                                     <li><a href="https://maps.app.goo.gl/4XYAPDmpesGnSbsC8"><i
                                                 class="fa-solid fa-location-dot"></i> 3891 Ranchview Dr. dev,
                                             cbn 62639</a></li>
