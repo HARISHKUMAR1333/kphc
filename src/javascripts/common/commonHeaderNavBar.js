@@ -18,6 +18,27 @@ const navBarElement = `<div class="nav-bar-wrapper">
               window.location.pathname === '/contact.html' ? 'active' : ''
             }><a href="contact.html">Contacts</a></li>
         </ul>
+        <span class= 'hamburger-menu' style="font-size:30px;cursor:pointer;align-self: center;" onclick="document.getElementById('mySidenav').style.width = '250px';">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick=" document.getElementById('mySidenav').style.width = '0';">&times;</a>
+  <ul class="drawer-list">
+            <li class=${
+              window.location.pathname === '/index.html' ||
+              window.location.pathname === '/'
+                ? 'active'
+                : ''
+            }><a href="index.html">Home</a></li>
+            <li class=${
+              window.location.pathname === '/services.html' ? 'active' : ''
+            }><a href="services.html">Our Services</a></li>
+            <li class=${
+              window.location.pathname === '/client.html' ? 'active' : ''
+            }><a href="client.html">Our Clients</a></li>
+            <li class=${
+              window.location.pathname === '/contact.html' ? 'active' : ''
+            }><a href="contact.html">Contacts</a></li>
+        </ul>
+</div>
     </div>`;
 
 const footer = `<footer class ='footermain-wrapper'>
