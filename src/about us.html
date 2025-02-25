@@ -6,6 +6,7 @@
     <title>About Us</title>
     <div id="commonNavbar"></div>
     <script src="../src/javascripts/common/commonHeaderNavBar.js"></script>
+    <script src="../src/javascripts/common/commonfooterNavBar.js"></script>
     <link rel="stylesheet" href="./stylesheets/common/style.css" />
     <link rel="icon" href="../src/images/common/logo.svg"/>
     <style>
@@ -53,7 +54,7 @@
             color: #ffeb3b;
         }
         .hero {
-            height: 60vh;
+            height: 40vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -63,7 +64,9 @@
             font-size: 36px;
             font-weight: 700;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+        
         }
         .hero button {
             background: white;
@@ -88,7 +91,7 @@
             max-width: 90%;
             margin: 50px auto;
             gap: 30px;
-            padding-top: 50px;
+            padding-top: 10px;
             flex-wrap: wrap;
         }
         .section-container.reverse {
@@ -119,14 +122,7 @@
             height: auto;
             border-radius: 10px;
         }
-        .footer {
-            background: #007bff;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        @media (max-width: 1024px) {
+        @media (max-width: 600px) {
             .hero {
                 font-size: 28px;
                 padding: 10px;
@@ -138,18 +134,48 @@
             .section-container {
                 flex-direction: column;
                 text-align: center;
+                align-items:center;
             }
             .text {
                 text-align: center;
+                margin-bottom: 20px;
+            }
+            .section-container .image {
+        margin-top: 20px; 
+    }
+            .image img {
+                width: 100%;
+                height:auto;
+            }
+            .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .section-container.reverse {
+                flex-direction: column;
+                
+            }
+            .text {
+                text-align: center;
+                order: 1;
+            }
+            .image {
+                order: 2;
+            
             }
             .image img {
-                width: 90%;
+                width: 100%;
+                height: auto;
             }
+    
+    
         }
     </style>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        .ceo { background: #009688; color: white; text-align: center; padding: 20px; font-size: 24px; }
+        .ceo { background:skyblue; color: white; text-align: center; padding: 20px; font-size: 24px; }
         .container { max-width: 1100px; margin: auto; padding: 20px; }
         .section { display: flex; flex-wrap: wrap; justify-content: space-between; }
         .box { width: 48%; background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
@@ -160,9 +186,9 @@
 <body>
     <div class="hero">
         <div>
-            <h1>Your Health, Our Priority</h1>
-            <p>Innovative Healthcare Solutions for You</p>
-            <button>Book an Appointment</button>
+            <h1 style="background-color: skyblue;">Your Health, Our Priority</h1>
+            <p style="background-color:skyblue;">Innovative Healthcare Solutions for You</p>
+            
         </div>
     </div>
     <div class="section-container who-we-are">
@@ -217,8 +243,6 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p>➤ 3891 Ranchview Dr, Richardson, TX 62639, United States</p>
-    </div>
+    
 </body>
 </html>
