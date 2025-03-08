@@ -1,4 +1,4 @@
-import logo from '../../images/common/logo.svg';
+import logo from '../../images/common/KP-new-logo.svg';
 const navBarElement = `<div class="nav-bar-wrapper">
         <div class="logo">
             <img src=${logo} />
@@ -50,7 +50,7 @@ const footer = `<footer class ='footermain-wrapper'>
                         <div class="footer__widget footer__widget-item-1">
                             <div class="footer__logo mb-30">
                                 <a href="index.html">
-                                    <img class="img-fluid" src=${logo}  alt="logo">
+                                    <img class="img-fluid" style="height:50px" src=${logo}  alt="logo">
                                 </a>
                             </div>
 
