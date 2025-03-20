@@ -144,9 +144,8 @@ Custom Service, Support, and Sales Tailored to Your Needs
                             <div class="col-lg-6">
                                 <div class="footer__copyright-menu">
                                     <ul>
-                                        <li><a href="about-us.html">Trams &amp; Condition</a></li>
-                                        <li><a href="about-us.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                       
+                                        <li><a href="aboutUs.html">About Us</a></li>
                                     </ul>
                                 </div>
                             </div>
